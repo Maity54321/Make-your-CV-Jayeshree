@@ -164,21 +164,25 @@ let isValidated = false;
 const fullValidation = () => {
 
     if(userVal == "" || addVal == "" || numVal == ""){
+        isValidated = false;
         alert('Please fill all the details!!');
         // e.preventDefault();
     }
     else if(!checkbox1.checked){                                     // after checked and filled up the values in 10th , problem of being unchecked
+        isValidated = false;
         alert('Minimum 10th pass required for making your CV here!');
     }
     else if(myearVal == "" || mperVal == "" || mschVal == "" || mboardVal == ""){
+        isValidated = false;
         alert('Fill up all the details for 10th!');
         // e.preventDefault();
     }
     else if(checkbox2.checked && (!hyearVal || !hperVal || !hstrVal || !hboardVal )){
-        // isValidated = false;
+        isValidated = false;
         alert('Fill up all the details for 12th!');
     }
     else if(checkbox3.checked && (gyearVal == "" || gcgpaVal == "" || gsubVal == "" || gdegVal == "" || guniVal == "")){
+        isValidated = false;
         alert('Fill up all the details for Graduation!');
     }
     else if((!userVal.match(letter)) || (!hstrVal.match(letter)) || (!gdegVal.match(letter))){
@@ -186,10 +190,12 @@ const fullValidation = () => {
         // e.preventDefault();
     }
     else if(numVal.length != 10){
+        isValidated = false;
         alert('Phone_no. must have 10 digits!!');
         // e.preventDefault();
     }
     else if(mschVal.match(checkNumber) || (mboardVal.match(checkNumber)) || (hboardVal.match(checkNumber)) || (gsubVal.match(checkNumber)) || (guniVal.match(checkNumber))){
+        isValidated = false;
         alert('Numbers not allowed in "School" , "Board" , "Subject" , "University" areas!!');
         // e.preventDefault();
     }
