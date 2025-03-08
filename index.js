@@ -175,7 +175,7 @@ const fullValidation = () => {
         // e.preventDefault();
     }
     else if(checkbox2.checked && (!hyearVal || !hperVal || !hstrVal || !hboardVal )){
-        isValidated = false;
+        // isValidated = false;
         alert('Fill up all the details for 12th!');
     }
     else if(checkbox3.checked && (gyearVal == "" || gcgpaVal == "" || gsubVal == "" || gdegVal == "" || guniVal == "")){
