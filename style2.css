@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(42, 42, 42);
+}
+h3{
+    margin-left: 3rem;
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+h4{
+    text-align: left;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem;
+}
+#main{
+    height: 50rem;
+    width: 40rem;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgb(141, 140, 140);
+}
+#secName{
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+#secLine{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(250, 168, 54);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#gridContainer1{
+    display: grid;
+    grid-template-columns: 170px 100px auto;
+    gap: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+#gridContainer2{
+    visibility: hidden;
+}
+.gridContainerS{
+    display: grid;
+    grid-template-columns: 170px 100px auto;
+    gap: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+#gridContainer3{
+    visibility: hidden;
+}
+.gridContainerT{
+    display: grid;
+    grid-template-columns: 170px 100px auto;
+    gap: 0.5rem 1.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+#icon{
+    font-size: 2rem;
+    color: black;
+}
+#downloadCV{
+    margin-top: 4rem;
+    height: 3rem;
+    width: 6rem;
+    background-color: navy;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+#refreshButton{
+    margin: 3rem;
+    height: 3rem;
+    width: 6rem;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.icon{
+    font-size: 1.5rem;
+    color: black;
+    margin-right: 1rem;
+}
+#CVaddress{
+    display: flex;
+    align-items: center;
+}
+#CVnumber{
+    display: flex;
+    align-items: center;
+}
+
+/* checking redeploy */
